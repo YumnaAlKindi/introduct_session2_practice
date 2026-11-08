@@ -12,7 +12,7 @@
         <p>Online Tax Service</p>
 
             <a href="#about">Home</a>
-            <a href="#menu">Tax filling</a>
+            <a href="./portal.html">Tax filling</a>
             <a href="#menu">Payment</a>
             <a href="#menu">Support</a>
             <a href="#menu">About</a>
@@ -86,34 +86,34 @@
         <p>Over filling completion this quarter: <img src="./complete.png"></p>
         <p>Average review score for submitted filling: <img src="./complete.png"></p>
     </div>
-    <br>
 
     <div style="border: 2px solid black; padding: 20px; margin: 20px;">
-        <form>
-            <div>
-            <p><b>Personal Details</b></p>
+    <section>
+        <h3>Register a Payment</h3>
+        <fieldset>
+        <legend>Personal Details</legend>
 
-            <label>Full Name</label>
-            <input>
-                <br>
-            <label>Email</label>
-            <input type="email">
-            </div>
+        <label for="fullName">Full Name: </label>
+        <input type="text" id="fullName" name="fullName">
+        <br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment details </legend>
+            <label for="amount">Amount (OMR):</label>
+            <input type="number" id="amount" name="amount" step="0.01" min="0">Enter the amount in Omani Rials, up to two decimal places.
             <br>
-            <div>
-                <p><b>Payment Details</b></p>
+            <label for="taxType">Tax Type:</label>
+            <input type="text" id="taxType" name="taxType">
 
-                <label>Amount (OMR)</label>
-                <input>Enter the amount in Omani Rials, up to two decimal places.
-                <br>
-                <label>Tax Type</label>
-                <input>
-            </div>
-            <input type="checkbox"> I confirm the information above is accurate
-            <br>
-            <button>Submit Payment</button> <button>Clear Form</button>
+        </fieldset>
 
-        </form>
+        <input type="checkbox" id="confirm" name="confirm">
+        <label for="confirm">I confirm the information above is accurate</label><br>
+        <button type="submit">Submit Payment</button><button type="reset">Clear Form</button>
+    </section>
     </div>
 
     <div style="border: 2px solid black; padding: 20px; margin: 20px;">
