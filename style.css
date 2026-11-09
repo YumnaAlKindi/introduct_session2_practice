@@ -1,0 +1,101 @@
+*{
+    font-family: Georgia; /*All of the font in the file is this*/
+}
+
+
+.container{
+    background-color: #F4F6F9;
+    margin: 0 auto; /*shorotcut to not write everything margin top bottom left and right ( 0 auto 0 auto is clockwise)*/
+    padding: 0 16px; 
+    max-width: 900px;
+}
+
+body, h1, h2, h3, h4, h5, span, p{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 900;
+    height: 320.4765625;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color:#1A4E8A;
+    color: white;
+    margin: 5px 0 10px 0;
+}
+
+.sub-title{
+    font-size:16px;
+    font-style: italic;
+    color: #C8D8EF;
+
+}
+
+.header a{ /* only the links in the header*/
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color:#2A6AB5;
+    border-radius: 4px;
+    color:white;
+    text-decoration: none;
+
+}
+.header nav{
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+
+h1{
+    font-family: Georgia;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 54.4px;
+    color: white;
+
+}
+
+.line {
+    height:1px;
+    background-color: #2A6AB5;
+    margin: 24px 0 36px 0;
+
+}
+
+.header label{
+    font-family: Georgia;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13.6px;
+    line-height: 23.12px;
+    letter-spacing: 0px;
+    color:  #C8D8EF;
+}
+
+.search-input{
+    margin-top: 32px;
+    padding: 10px 12px;
+    border: none;
+    width: 260;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+
+.search-btn{
+    padding: 10px 24px;
+    color: white;
+    border: none;
+    background: none;
+    cursor: pointer; /*can change the cursor to pointer*/
+}
+
+/*
+class has more priority than the tag
+avoid using important keyword
+Score (inline, ID, class, element)
+*/

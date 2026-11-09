@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tax Payer Portal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div style="width: 900px; margin: 0 auto;">
-    <header style="border: 2px solid black; padding: 20px; margin: 20px;">
+    <div class="container">
+    <header class = "header">
         <h1>Tax Payer Portal</h1>
-        <p>Online Tax Service</p>
-
+        <p class="sub-title">Online Tax Service</p>
+        <nav>
             <a href="#about">Home</a>
             <a href="./portal.html">Tax filling</a>
             <a href="#menu">Payment</a>
             <a href="#menu">Support</a>
             <a href="#menu">About</a>
+        </nav>
+
+        <div class="line"></div>
 
         <form>
             <label>Search for the portal: </label>
-            <p>Search the portal</p>
-            <input placeholder="e.h. VAT return">&ensp;<button>Search</button>
+            <div >
+            <input class="search-input" type="search"  placeholder="e.h. VAT return">
+            <button class="search-btn">Search</button>
+            </div>
         </form>
     </header>
     <br>
@@ -146,8 +152,6 @@
         </details>
 
     </div>
-
-
 
     <footer style="border: 2px solid black; padding: 20px; margin: 20px;">
         &copy; 2026 Tax Payer Portal. All rights reserved.
