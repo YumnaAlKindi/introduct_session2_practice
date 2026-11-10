@@ -15,6 +15,11 @@ body, h1, h2, h3, h4, h5, span, p{
     padding: 0;
 }
 
+.navigation{
+    position:sticky;
+    top: 0;
+}
+
 .header{
     width: 900;
     height: 320.4765625;
@@ -92,6 +97,111 @@ h1{
     border: none;
     background: none;
     cursor: pointer; /*can change the cursor to pointer*/
+}
+
+section{
+    background-color: white;
+    border: 1px solid #D0DCE8;
+    padding : 24px;
+    margin-top: 24px;
+    border-radius: 8px;
+}
+
+section h2, article h2{
+    color: #1A4E8A;
+    font-size: 22px;
+    border-bottom: 2px solid  #D0DCE8;
+    padding-bottom: 15px;
+
+}
+
+.welcome img{
+    width:100%;
+    margin-top:16px;
+
+}
+
+.welcome p {
+    margin-top: 16px;
+    line-height: 28px;
+}
+
+.welcome figcaption{
+    color: #666666;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.announcment p{
+    padding-top: 18px;
+}
+
+.announcment blockquote{
+    width: 100;
+    height: 80;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left-width: 4px;
+    border-left: 4px solid #1A4E8A;
+    background: #F0F5FF;
+}
+
+.announcment figcaption{
+    padding-top: 16px;
+    font-family: Georgia;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13.12px;
+    line-height: 22.3px;
+    letter-spacing: 0px;
+    color: #666666;
+
+
+}
+
+
+
+.filling table{
+    width: 100%;
+}
+.filling th{
+    background-color:#1A4E8A;
+    color: white;
+    text-align: left;
+
+}
+.filling td{
+    border: 1px solid #D0DCE8;
+}
+
+.filling tr:nth-child(even){ /*to make every other row diff colors*/
+    background-color:  #D0DCE8;
+}
+
+.filling p{
+    font-family: Georgia;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 15.2px;
+    line-height: 25.84px;
+    letter-spacing: 0px;
+
+}
+
+.progress-wrapper{
+    margin-top:20px;
+    display:inline-block;
+    width: 49%;
+}
+
+.progress-wrapper progress{
+    margin-top: 10px;
+    width: 70%;
 }
 
 /*

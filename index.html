@@ -11,7 +11,7 @@
     <header class = "header">
         <h1>Tax Payer Portal</h1>
         <p class="sub-title">Online Tax Service</p>
-        <nav>
+        <nav class="navigation">
             <a href="#about">Home</a>
             <a href="./portal.html">Tax filling</a>
             <a href="#menu">Payment</a>
@@ -31,7 +31,7 @@
     </header>
     <br>
 
-    <div style="border: 2px solid black; padding: 20px; margin: 20px;">
+    <section class="welcome">
         <h2>Welcome to the portal</h2>
         <p>This online system allows registered taxpayers to <b>file returns</b>, manage payments, and track submissions online. The
             portal is designed to simplify communication between taxpayers and the tax authority.</p>
@@ -43,27 +43,27 @@
         <img src="./dashboard.png"
         alt="Overview of the tax payer dashboard" width="800px">
         <figcaption>Figure 1: overview of the tax payer dashoboard</figcaption>
-    </div>
+    </section>
 
     <br>
 
-    <div style="border: 2px solid black; padding: 20px; margin: 20px;">
+    <section class="announcment" >
         <h2>Announcement: VAT Filing Deadline Extended</h2>
         <p>The deadline for quarterly VAT filing has been extended by two weeks to accommodate the recent system maintenance window. </p>
-        <br>
+
         <figure>
         <blockquote><i>All pending VAT submissions will now be accepted until the end of the month without penalty.</i></blockquote>
         <figcaption>Source:<i> Portal Communications Team</i></figcaption>
         </figure>
-        <br>
+        
         <p>Published: 20 July 2026</p>
-    </div>
+    </section>
     <br>
 
-    <div style="border: 2px solid black; padding: 20px; margin: 20px;">
+    <section class="filling">
         <h2>Recent Filling Types</h2>
         <p><b>Filling status for current period</b></p>
-        <table border="1" cellpadding="8" cellspacing="0">
+        <table cellpadding="8" cellspacing="0">
             <thead>
                 <tr>
                     <th scope="col">Tax Type</th>
@@ -89,13 +89,19 @@
                 </tr>
             </tbody>
         </table>
-        <p>Over filling completion this quarter: <img src="./complete.png"></p>
-        <p>Average review score for submitted filling: <img src="./complete.png"></p>
-    </div>
 
-    <div style="border: 2px solid black; padding: 20px; margin: 20px;">
+        <div class="progress-wrapper">
+            <label for="score">Over filling completion this quarter: </label>
+            <progress id="filling" max="200" value="134"></progress>
+        </div>
+        <div class="progress-wrapper">
+            <label for="score">Average review score for submitted filling: </label>
+            <progress id="filling" max="200" value="154"></progress>
+        </div>
+    </section>
+
     <section>
-        <h3>Register a Payment</h3>
+        <h2>Register a Payment</h2>
         <fieldset>
         <legend>Personal Details</legend>
 
@@ -120,9 +126,9 @@
         <label for="confirm">I confirm the information above is accurate</label><br>
         <button type="submit">Submit Payment</button><button type="reset">Clear Form</button>
     </section>
-    </div>
+    
 
-    <div style="border: 2px solid black; padding: 20px; margin: 20px;">
+    <section>
 
         <h2>Quick Links</h2>
         <ul>
@@ -151,7 +157,7 @@
 
         </details>
 
-    </div>
+    </section>
 
     <footer style="border: 2px solid black; padding: 20px; margin: 20px;">
         &copy; 2026 Tax Payer Portal. All rights reserved.
@@ -161,6 +167,7 @@
         <a href="#main">Privacy Policy</a>&ensp;<a href="#main">Terms of Use</a>&ensp;<a href="#main">Contact Us</a>
     </footer>
 
+    </div>
     </div>
 
 
