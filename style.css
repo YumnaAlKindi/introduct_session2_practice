@@ -204,6 +204,146 @@ section h2, article h2{
     width: 70%;
 }
 
+/*Wed class */
+.secure-label{
+    background-color: #d4e8d0;
+    color: green;
+    padding: 5px 10px;
+    font-weight: 700;
+    border-radius: 16px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.register-payment{
+    position: relative;
+}
+
+.register-payment:hover .secure-label{ /*to change the color when hover over entire selection*/
+    background-color: #c7e2c0
+}
+
+fieldset{
+    width: 846;
+    height: 213;
+    opacity: 1;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-top: 1px solid #C0D0E8;
+    background: #F8FAFF;
+    width: 850;
+    margin-top: 15px;
+}
+
+.register-payment label{
+    width: 804;
+height: 37;
+opacity: 1;
+padding-top: 12px;
+font-family: Georgia;
+font-weight: 700;
+font-style: Bold;
+font-size: 14.4px;
+line-height: 24.48px;
+padding-top: 12px;
+}
+
+.register-payment p{
+    width: 126;
+height: 26;
+angle: 0 deg;
+opacity: 1;
+font-family: Georgia;
+font-weight: 700;
+font-style: Bold;
+font-size: 15.2px;
+leading-trim: NONE;
+line-height: 25.84px;
+letter-spacing: 0px;
+color: #1A4E8A;
+
+}
+
+.input-info input{
+    width:100%;
+    height: 30px;
+    opacity: 1;
+    border-radius: 4px;
+    border-width: 1px;
+    border: 1px solid #B0C4DE;
+    background: #FFFFFF;
+}
+
+.check{
+    width: 850;
+    height: 29.4609375;
+    padding-top: 12px;
+}
+
+.check input{
+    width: 25;
+    height: 16;
+    opacity: 1;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    padding-left: 4px;
+}
+.check span{
+    width: 326;
+    height: 25;
+    opacity: 1;
+    top: -23.02px;
+    left: 25px;
+    font-family: Georgia;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14.4px;
+    line-height: 24.48px;
+    letter-spacing: 0px;
+}
+
+.register-payment small{
+    font-family: Georgia;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13.12px;
+    line-height: 22.3px;
+    letter-spacing: 0px;
+    color: #666666;
+
+}
+
+.register-payment button{
+    border-radius: 4px;
+    top: 17px;
+    border: 1px solid #1A4E8A;
+    padding: 12px 12px;
+    margin-top: 17px;
+    margin-right: 10px;
+
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 15.2px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    background: #1A4E8A;
+    color: white;
+}
+
+.register-payment button:hover{
+    background: white;
+    color: #1A4E8A;
+}
+
+
+
+
 /*
 class has more priority than the tag
 avoid using important keyword

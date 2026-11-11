@@ -100,30 +100,34 @@
         </div>
     </section>
 
-    <section>
+    <section class="register-payment">
         <h2>Register a Payment</h2>
-        <fieldset>
-        <legend>Personal Details</legend>
+        <span class="secure-label">Secure</span>
 
-        <label for="fullName">Full Name: </label>
-        <input type="text" id="fullName" name="fullName">
-        <br>
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email">
+        <fieldset class="input-info">
+        <p>Personal Details</p>
+            <label for="fullName">Full Name: </label>
+            <input type="text" id="fullName" name="fullName">
+            <br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email">
         </fieldset>
 
-        <fieldset>
-            <legend>Payment details </legend>
+        <fieldset  class="input-info">
+            <p>Payment details </p>
             <label for="amount">Amount (OMR):</label>
-            <input type="number" id="amount" name="amount" step="0.01" min="0">Enter the amount in Omani Rials, up to two decimal places.
+            <input type="number" id="amount" name="amount" step="0.01" min="0"><small>Enter the amount in Omani Rials, up to two decimal places.</small>
             <br>
             <label for="taxType">Tax Type:</label>
             <input type="text" id="taxType" name="taxType">
 
         </fieldset>
 
-        <input type="checkbox" id="confirm" name="confirm">
-        <label for="confirm">I confirm the information above is accurate</label><br>
+        <div class="check">
+            <input  type="checkbox" id="confirm" name="confirm">
+            <span for="confirm">I confirm the information above is accurate</span>
+        </div>
+        
         <button type="submit">Submit Payment</button><button type="reset">Clear Form</button>
     </section>
     
