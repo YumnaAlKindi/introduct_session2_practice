@@ -1,0 +1,16 @@
+:root{
+    --color-container-background: #F4F6F9;
+    --color-background-white: #FFFFFF;
+    --color-border: #D0DCE8;
+    --color-dark-blue: #1A4E8A;
+    --color-fieldset-border: #C0D0E8;
+    --color-fieldset-background: #F8FAFF;
+    --color-subtitle: #C8D8EF;
+    --color-header-a: #2A6AB5;
+    --color-figcation: #666666;
+    --color-background-blockquote: #F0F5FF;
+    --color-background-secure: #d4e8d0;
+    --color-background-secure-hover: #c7e2c0;
+    --color-font-secure: green;
+
+}

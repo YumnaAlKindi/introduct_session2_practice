@@ -1,0 +1,57 @@
+*{
+    font-family: Georgia; /*All of the font in the file is this*/
+}
+
+.container{
+    background-color: var(--color-container-background);
+    margin: 0 auto; /*shorotcut to not write everything margin top bottom left and right ( 0 auto 0 auto is clockwise)*/
+    padding: 0 16px; 
+    max-width: 900px;
+}
+
+body, h1, h2, h3, h4, h5, span, p{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: Georgia;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 54.4px;
+    color: white;
+
+}
+
+section{
+    background-color: var(--color-background-white);
+    border: 1px solid var(--color-border);
+    padding : 24px;
+    margin-top: 24px;
+    border-radius: 8px;
+}
+
+section h2, article h2{
+    color: var(--color-dark-blue);
+    font-size: 22px;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 15px;
+
+}
+
+fieldset{
+    width: 846;
+    height: 213;
+    opacity: 1;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-top: 1px solid var(--color-fieldset-border);
+    background: var(--color-fieldset-background);
+    width: 850;
+    margin-top: 15px;
+}
+

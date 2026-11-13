@@ -1,19 +1,4 @@
-*{
-    font-family: Georgia; /*All of the font in the file is this*/
-}
 
-
-.container{
-    background-color: #F4F6F9;
-    margin: 0 auto; /*shorotcut to not write everything margin top bottom left and right ( 0 auto 0 auto is clockwise)*/
-    padding: 0 16px; 
-    max-width: 900px;
-}
-
-body, h1, h2, h3, h4, h5, span, p{
-    margin: 0;
-    padding: 0;
-}
 
 .navigation{
     position:sticky;
@@ -29,24 +14,24 @@ body, h1, h2, h3, h4, h5, span, p{
     padding-left: 24px;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
-    background-color:#1A4E8A;
-    color: white;
+    background-color: var(--color-dark-blue);
+    color: var(--color-section-background);
     margin: 5px 0 10px 0;
 }
 
 .sub-title{
     font-size:16px;
     font-style: italic;
-    color: #C8D8EF;
+    color: var(--color-subtitle);
 
 }
 
 .header a{ /* only the links in the header*/
     font-size: 14px;
     padding: 6px 12px;
-    background-color:#2A6AB5;
+    background-color: var(--color-header-a);
     border-radius: 4px;
-    color:white;
+    color: var(--color-background-white);
     text-decoration: none;
 
 }
@@ -55,18 +40,9 @@ body, h1, h2, h3, h4, h5, span, p{
     margin-bottom: 15px;
 }
 
-h1{
-    font-family: Georgia;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 54.4px;
-    color: white;
-
-}
-
 .line {
     height:1px;
-    background-color: #2A6AB5;
+    background-color: var(--color-header-a);
     margin: 24px 0 36px 0;
 
 }
@@ -74,11 +50,10 @@ h1{
 .header label{
     font-family: Georgia;
     font-weight: 400;
-    font-style: Regular;
     font-size: 13.6px;
     line-height: 23.12px;
     letter-spacing: 0px;
-    color:  #C8D8EF;
+    color:  var(--color-subtitle);
 }
 
 .search-input{
@@ -93,26 +68,10 @@ h1{
 
 .search-btn{
     padding: 10px 24px;
-    color: white;
+    color: var(--color-background-white);
     border: none;
     background: none;
     cursor: pointer; /*can change the cursor to pointer*/
-}
-
-section{
-    background-color: white;
-    border: 1px solid #D0DCE8;
-    padding : 24px;
-    margin-top: 24px;
-    border-radius: 8px;
-}
-
-section h2, article h2{
-    color: #1A4E8A;
-    font-size: 22px;
-    border-bottom: 2px solid  #D0DCE8;
-    padding-bottom: 15px;
-
 }
 
 .welcome img{
@@ -127,7 +86,7 @@ section h2, article h2{
 }
 
 .welcome figcaption{
-    color: #666666;
+    color: var(--color-figcation);
     font-style: italic;
     font-size: 14px;
     margin-top: 8px;
@@ -147,8 +106,8 @@ section h2, article h2{
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     border-left-width: 4px;
-    border-left: 4px solid #1A4E8A;
-    background: #F0F5FF;
+    border-left: 4px solid var(--color-dark-blue);
+    background: var(--color-background-blockquote);
 }
 
 .announcment figcaption{
@@ -159,7 +118,7 @@ section h2, article h2{
     font-size: 13.12px;
     line-height: 22.3px;
     letter-spacing: 0px;
-    color: #666666;
+    color: var(--color-figcation);
 
 
 }
@@ -170,17 +129,17 @@ section h2, article h2{
     width: 100%;
 }
 .filling th{
-    background-color:#1A4E8A;
-    color: white;
+    background-color:var(--color-dark-blue);
+    color: var(--color-background-white);
     text-align: left;
 
 }
 .filling td{
-    border: 1px solid #D0DCE8;
+    border: 1px solid var(--color-border);
 }
 
 .filling tr:nth-child(even){ /*to make every other row diff colors*/
-    background-color:  #D0DCE8;
+    background-color:  var(--color-border);
 }
 
 .filling p{
@@ -206,8 +165,8 @@ section h2, article h2{
 
 /*Wed class */
 .secure-label{
-    background-color: #d4e8d0;
-    color: green;
+    background-color: var(--color-background-secure);
+    color: var(--color-font-secure);
     padding: 5px 10px;
     font-weight: 700;
     border-radius: 16px;
@@ -221,23 +180,7 @@ section h2, article h2{
 }
 
 .register-payment:hover .secure-label{ /*to change the color when hover over entire selection*/
-    background-color: #c7e2c0
-}
-
-fieldset{
-    width: 846;
-    height: 213;
-    opacity: 1;
-    padding-top: 16px;
-    padding-right: 20px;
-    padding-bottom: 16px;
-    padding-left: 20px;
-    border-radius: 6px;
-    border-width: 1px;
-    border-top: 1px solid #C0D0E8;
-    background: #F8FAFF;
-    width: 850;
-    margin-top: 15px;
+    background-color: var(--color-background-secure-hover);
 }
 
 .register-payment label{
@@ -255,28 +198,33 @@ padding-top: 12px;
 
 .register-payment p{
     width: 126;
-height: 26;
-angle: 0 deg;
-opacity: 1;
-font-family: Georgia;
-font-weight: 700;
-font-style: Bold;
-font-size: 15.2px;
-leading-trim: NONE;
-line-height: 25.84px;
-letter-spacing: 0px;
-color: #1A4E8A;
+    height: 26;
+    opacity: 1;
+    font-family: Georgia;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 15.2px;
+    line-height: 25.84px;
+    letter-spacing: 0px;
+    color: var(--color-dark-blue);
 
 }
 
+.register-payment label::after{
+    content: "*";
+    color: red;
+    padding-left: 3px;
+}
+
 .input-info input{
-    width:100%;
+    width:98%;
     height: 30px;
     opacity: 1;
     border-radius: 4px;
     border-width: 1px;
     border: 1px solid #B0C4DE;
-    background: #FFFFFF;
+    background: var(--color-background-white);
+    padding-left: 16px;
 }
 
 .check{
@@ -332,14 +280,17 @@ color: #1A4E8A;
     line-height: 100%;
     letter-spacing: 0px;
     text-align: center;
-    background: #1A4E8A;
-    color: white;
+    background: var(--color-dark-blue);
+    color: var(--color-background-white);
+    transition: ease .3s;
 }
 
 .register-payment button:hover{
-    background: white;
-    color: #1A4E8A;
+    background: var(--color-background-white);
+    color: var(--color-dark-blue);
 }
+
+
 
 
 
